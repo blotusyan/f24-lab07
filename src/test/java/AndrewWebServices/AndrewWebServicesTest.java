@@ -17,7 +17,8 @@ public class AndrewWebServicesTest {
         // You need to use some mock objects here
         // database = new Database(); // We probably don't want to access our real database...
         database = new InMemoryDatabase();
-        recommender = new RecSys();
+        // recommender = new RecSys();
+        recommender = new InMemoryRecSys();
         promoService = new PromoService();
 
         andrewWebService = new AndrewWebServices(database, recommender, promoService);
